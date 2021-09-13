@@ -1,6 +1,7 @@
 /image_venv
 db.sqlite3
 media/images
+media/cache
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
