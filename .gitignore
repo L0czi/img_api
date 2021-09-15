@@ -2,9 +2,7 @@
 db.sqlite3
 media/images
 media/cache
-docker-compose.yml
-dockerfile
-requirements.txt
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
