@@ -31,10 +31,11 @@ class PostImage(APIView):
             serializer.save(owner=account)
 
             response = {}
-            if account.tier.tier_name == "Basic":
+            print(account.tier)
+            if account.tier == "BASIC":
                 response["thumbnail_200"] = serializer.data["thumbnail_200"]
 
-            elif account.tier.tier_name == "Premium":
+            elif account.tier == "PREMIUM":
                 response["image"] = serializer.data["image"]
                 response["thumbnail_200"] = serializer.data["thumbnail_200"]
                 response["thumbnail_400"] = serializer.data["thumbnail_400"]
